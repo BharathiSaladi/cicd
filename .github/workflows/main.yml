@@ -28,7 +28,7 @@ jobs:
 
     - name: Copy files to /var/www/html
       uses: appleboy/ssh-action@v1
-       with:
+      with:
         host: ${{ secrets.EC2_HOST }}
         username: ${{ secrets.EC2_USERNAME }}
         password: ${{ secrets.EC2_SSH_KEY }}
